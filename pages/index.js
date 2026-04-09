@@ -128,7 +128,7 @@ export default function Home() {
     })
 
     await new Promise(r => setTimeout(r, 250))
-    setStep(4)
+    setStep(5)
     addLog('Pipeline completado.', 'ok')
     if (inv.importe > 1000) addLog('ALERTA: Gasto >1.000€ — el workflow n8n enviaría email de alerta.', 'warn')
     setStatus({
