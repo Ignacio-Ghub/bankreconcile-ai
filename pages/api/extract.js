@@ -12,8 +12,12 @@ export default async function handler(req, res) {
   }
 
   const apiKey = process.env.OPENAI_API_KEY
+
   if (!apiKey) {
-    return res.status(500).json({ error: 'OPENAI_API_KEY no configurada en el servidor.' })
+    return res.status(500).json({
+      error: 'KEY NO ENCONTRADA',
+      vars: Object.keys(process.env).filter(k => k.includes('OPENAI'))
+    })
   }
 
   try {
