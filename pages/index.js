@@ -334,7 +334,7 @@ export default function Home() {
                   <div className="dz-main">Arrastra una imagen aquí</div>
                   <div className="dz-sub">PNG, JPG, WEBP · haz clic para seleccionar</div>
                 </div>
-                <input ref={fileRef} type="file" accept="image/png,image/jpeg,image/webp" style={{ display: 'none' }} onChange={e => handleFile(e.target.files[0])} />
+                <input ref={fileRef} type="file" accept="image/*" style={{ display: 'none' }} onChange={e => handleFile(e.target.files[0])} />
                 {fileInfo && <div className="file-ok"><span>✓</span><span>{fileInfo}</span></div>}
                 <div className="divider-or">o pega el texto</div>
                 <textarea
