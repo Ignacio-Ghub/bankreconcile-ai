@@ -81,5 +81,7 @@ npm run dev
 
 ---
 
-**Ignacio Briceño** · Portfolio de automatización e IA  
+**Ignacio Briceño** 
+Consultor de Desarrollo Social e Inteligencia Artifial
+Portfolio de automatización e IA  
 GPT-4o + n8n + Next.js + Vercel
